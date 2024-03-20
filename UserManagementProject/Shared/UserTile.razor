@@ -1,0 +1,18 @@
+﻿<div class="user-tile">
+    @if (User is not null)
+    {
+        <div class="user-tile__group">
+            <img src="/icons/circle.svg" />
+        </div>
+        @if (!string.IsNullOrWhiteSpace(User.Image))
+        {
+            <img class="user-tile__image" src="/icons/@(User.Image).svg" />
+        }
+        <span class="user-tile__name">@User.Name</span>
+        <span class="user-tile__last-name">@User.LastName</span>
+        <div class="user-tile__city">
+            <img src="/icons/pin-@(TileOrderNumber % 2 == 0 ? "green" : "dark").svg" />
+            <span>@User.City</span>
+        </div>
+    }
+</div>
