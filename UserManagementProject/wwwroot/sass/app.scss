@@ -30,8 +30,19 @@ body {
     border-radius: 4px;
 }
 
-/* Default Blazor Error styles */
+.mud-drop-item:nth-child(2n) .user-tile .user-tile__city {
+    background-color: rgba(107, 199, 157, 1);
+}
 
+.mud-drop-item:nth-child(2n) .user-tile .user-tile__city-pin {
+    background-image: url("/icons/pin-dark.svg");
+}
+
+.mud-drop-item:nth-child(2n) .user-tile span {
+    color: rgba(50, 41, 63, 1);
+}
+
+/* Default Blazor Error styles */
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
