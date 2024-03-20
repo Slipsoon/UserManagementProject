@@ -7,4 +7,15 @@
         <MudDropZone T="UserVM" Style="display: flex; flex-direction: row; flex-wrap: wrap; flex: 1;" 
         Identifier="0" AllowReorder="true" />
     </div>
+    <div class="users__logs">
+        <div id="scrl" class="users__logs-list">
+            @foreach (string activity in _userAcitivities)
+            {
+                <div class="users__log">
+                    <img src="/icons/circle.svg" />
+                    <span>@activity</span>
+                </div>
+            }
+        </div>
+    </div>
 </div>

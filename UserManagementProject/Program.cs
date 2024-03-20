@@ -1,4 +1,5 @@
 using MudBlazor.Services;
+using UserManagementProject.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddMudServices();
+
+builder.Services.AddScoped<IUserActivity, UserActivity>();
 
 var app = builder.Build();
 
