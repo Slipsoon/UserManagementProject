@@ -24,6 +24,8 @@ public partial class UsersManagement
 
     private void ItemUpdated(MudItemDropInfo<UserVM> dropItem)
     {
+        if (dropItem.Item.AssignedGroup == dropItem.DropzoneIdentifier) return;
+
         NotifyUserMove(dropItem);
         dropItem.Item.AssignedGroup = dropItem.DropzoneIdentifier;
     }
