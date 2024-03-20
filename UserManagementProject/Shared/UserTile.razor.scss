@@ -1,0 +1,59 @@
+﻿@import '../wwwroot/sass/_variables.scss';
+
+.user-tile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 13.8rem;
+    align-items: center;
+    margin: 1rem 2rem 1rem 0;
+
+    &__group {
+        width: 100%;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    &__image {
+        width: 8.6rem;
+        height: 8.6rem;
+        margin: -1.1rem 0;
+    }
+
+    &__name {
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: $dark;
+    }
+
+    &__last-name {
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: $dark;
+    }
+
+    &__city {
+        width: 100%;
+        background-color: $purple-dark;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        margin-top: 1rem;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        img {
+            width: 1.2rem;
+            height: 1.6rem;
+            margin-right: 0.5rem;
+        }
+
+        span {
+            line-height: 20px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    }
+}

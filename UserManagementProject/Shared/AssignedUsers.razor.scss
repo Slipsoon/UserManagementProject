@@ -1,0 +1,12 @@
+﻿@import '../wwwroot/sass/_variables.scss';
+
+.assigned-users {
+    display: flex;
+    flex: 1;
+    background-color: green;
+    border-radius: 8px;
+    margin: 2rem;
+    margin-left: 0;
+    background: radial-gradient(at top left, rgba(217, 217, 217, .4), transparent);
+    max-width: 59.03%;
+}
