@@ -14,7 +14,7 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        height: 10rem;
+        height: 7.5rem;
 
         .users__title {
             color: #fff;
@@ -31,5 +31,43 @@
     &__list {
         display: flex;
         flex: 1;
+    }
+
+    &__logs {
+        position: relative;
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+        border-top: 2px solid $white;
+    }
+
+    &__logs-list {
+        position: absolute;
+        overflow-y: auto;
+        max-height: 40vh;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    &__log {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 31px;
+        display: flex;
+        align-items: center;
+        height: 3.8rem;
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 1);
+        padding: 0 2rem;
+        margin: 1rem 1.5rem 1rem 0;
+
+        img {
+            margin-right: 1rem;
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    &__log:first-child {
+        margin-top: 0rem;
     }
 }
