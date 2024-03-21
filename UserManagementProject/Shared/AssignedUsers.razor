@@ -1,22 +1,22 @@
 ﻿<div class="assigned-users">
     <div class="assigned-users__group-list">
-        <div @onclick="@(() => SelectedGroup = "1")" class="assigned-users__group @(SelectedGroup == "1" ? "assigned-users__group--active" : string.Empty)">
+        <div @onclick="@(() => SelectedGroup = "1")" @ondragenter="@(() => SelectedGroup = "1")" class="assigned-users__group @(SelectedGroup == "1" ? "assigned-users__group--active" : string.Empty)">
             <img src="/icons/star-filled.svg"/>
             <span>Grupa 1</span>
         </div>
-        <div @onclick="@(() => SelectedGroup = "2")" class="assigned-users__group @(SelectedGroup == "2" ? "assigned-users__group--active" : string.Empty)">
+        <div @onclick="@(() => SelectedGroup = "2")" @ondragenter="@(() => SelectedGroup = "2")" class="assigned-users__group @(SelectedGroup == "2" ? "assigned-users__group--active" : string.Empty)">
             <img src="/icons/flower-filled.svg" />
             <span>Grupa 2</span>
         </div>
-        <div @onclick="@(() => SelectedGroup = "3")" class="assigned-users__group @(SelectedGroup == "3" ? "assigned-users__group--active" : string.Empty)">
+        <div @onclick="@(() => SelectedGroup = "3")" @ondragenter="@(() => SelectedGroup = "3")" class="assigned-users__group @(SelectedGroup == "3" ? "assigned-users__group--active" : string.Empty)">
             <img src="/icons/smile-filled.svg" />
             <span>Grupa 3</span>
         </div>
-        <div @onclick="@(() => SelectedGroup = "4")" class="assigned-users__group @(SelectedGroup == "4" ? "assigned-users__group--active" : string.Empty)">
+        <div @onclick="@(() => SelectedGroup = "4")" @ondragenter="@(() => SelectedGroup = "4")" class="assigned-users__group @(SelectedGroup == "4" ? "assigned-users__group--active" : string.Empty)">
             <img src="/icons/triangle-filled.svg" />
             <span>Grupa 4</span>
         </div>
-        <div @onclick="@(() => SelectedGroup = "5")" class="assigned-users__group @(SelectedGroup == "5" ? "assigned-users__group--active" : string.Empty)">
+        <div @onclick="@(() => SelectedGroup = "5")" @ondragenter="@(() => SelectedGroup = "5")" class="assigned-users__group @(SelectedGroup == "5" ? "assigned-users__group--active" : string.Empty)">
             <img src="/icons/square-filled.svg" />
             <span>Grupa 5</span>
         </div>
