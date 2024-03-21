@@ -9,11 +9,11 @@
     </div>
     <div class="users__logs">
         <div id="scrl" class="users__logs-list">
-            @foreach (string activity in _userAcitivities)
+            @foreach (KeyValuePair<string, string> activity in _userAcitivities)
             {
                 <div class="users__log">
-                    <img src="/icons/circle.svg" />
-                    <span>@activity</span>
+                    <img src="/icons/@(GetUserGroupImage(activity.Value)).svg" />
+                    <span>@activity.Key</span>
                 </div>
             }
         </div>
