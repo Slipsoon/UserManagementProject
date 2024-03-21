@@ -34,11 +34,11 @@ public partial class UsersManagement
     {
         if (dropItem.DropzoneIdentifier == UserDefaultGroup)
         {
-            UserActivity.SendNewActivityNotification($"Użytkownik {dropItem.Item.Name} {dropItem.Item.LastName} został usunięty z Grupy {dropItem.Item.AssignedGroup}");
+            UserActivity.SendNewActivityNotification($"Użytkownik {dropItem.Item.Name} {dropItem.Item.LastName} został usunięty z Grupy {dropItem.Item.AssignedGroup}", dropItem.Item.AssignedGroup);
         }
         else
         {
-            UserActivity.SendNewActivityNotification($"Użytkownik {dropItem.Item.Name} {dropItem.Item.LastName} został przeniesiony do Grupy {dropItem.DropzoneIdentifier}");
+            UserActivity.SendNewActivityNotification($"Użytkownik {dropItem.Item.Name} {dropItem.Item.LastName} został przeniesiony do Grupy {dropItem.DropzoneIdentifier}", dropItem.DropzoneIdentifier);
         }
     }
 }
