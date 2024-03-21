@@ -2,7 +2,7 @@
     @if (User is not null)
     {
         <div class="user-tile__group">
-            <img src="/icons/circle.svg" />
+            <img src="/icons/@(GetUserGroupImage()).svg" />
         </div>
         @if (!string.IsNullOrWhiteSpace(User.Image))
         {
